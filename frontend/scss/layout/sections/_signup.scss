@@ -1,0 +1,90 @@
+.signup {
+  margin-top: 6.2em;
+
+  &__title {
+    padding-left: 12.6em;
+
+    & span {
+      display: block;
+    }
+
+    &_icon {
+      width: 100%;
+      height: auto;
+      min-width: em(500, 120);
+      max-width: em(500, 120);
+      margin-right: 0.32em;
+      transform: translate(-0.15em,-.12em);
+    }
+  }
+
+  &__center {
+    display: flex;
+    margin-top: 8.5em;
+    padding-left: em(24);
+  }
+
+  &__girls {
+    & img {
+      width: em(768);
+      height: em(448);
+    }
+  }
+
+  &__list {
+    margin-left: em(203);
+    margin-top: 0.5em;
+
+    li {
+      font-family: 'Neue Machina';
+      font-style: normal;
+      font-weight: 400;
+      color: var(--black);
+      font-size: em(40);
+      line-height: em(41, 40);
+      margin-bottom: em(32, 40);
+
+      span {
+        font-size: em(29, 40);
+        line-height: em(30, 40);
+        color: var(--blue);
+        margin-right: em(25, 40);
+        display: inline-block;
+        vertical-align: top;
+        padding-top: .3em;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    margin-top: em(96);
+    padding-left: em(176);
+
+    &_head {
+      width: 56%;
+    }
+
+    &_title {
+      font-family: 'Neue Machina';
+      font-style: normal;
+      font-weight: 400;
+      font-size: em(40);
+      line-height: em(41, 40);
+      margin-bottom: em(40, 40);
+    }
+
+    &_yellow {
+      width: 72%;
+      background: url('../img/signup/yellow.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: em(40);
+
+      & span {
+        font-size: em(20);
+        line-height: em(30, 20);
+      }
+    }
+  }
+}

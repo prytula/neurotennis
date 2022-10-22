@@ -1,0 +1,83 @@
+.offer {
+  margin-top: 6.3em;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 17.7em;
+    margin-bottom: 5.2em;
+
+    &_icon {
+      width: 100%;
+      height: auto;
+      min-width: em(61);
+      max-width: em(61);
+      margin-left: 1.2em;
+      margin-top: 0.9em;
+    }
+  }
+
+  &__items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: em(1564);
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: em(361);
+
+    &:nth-child(2), &:nth-child(4) {
+      margin-top: 18em;
+    }
+
+    &_img img {
+      width: 100%;
+    }
+
+    &_number {
+      width: em(139);
+      background: var(--blue);
+      color: #FFFFFF;
+      padding: em(8) em(12);
+      margin-top: -1.5em;
+      margin-bottom: 1.3em;
+      text-transform: uppercase;
+
+      & span {
+        font-size: em(30);
+        line-height: em(31, 30);
+      }
+    }
+
+    &_number, &_title {
+      font-family: 'Neue Machina';
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    &_title {
+      color: var(--black);
+      margin-bottom: em(24);
+      
+      & span {
+        font-size: em(40);
+        line-height: em(41, 40);
+      }
+    }
+
+    &_description {
+      & span {
+        font-size: em(18);
+        line-height: em(30, 18);
+      }
+    }
+  }
+}

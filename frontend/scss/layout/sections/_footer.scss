@@ -1,0 +1,79 @@
+.footer {
+  margin-top: 6.2em;
+  padding-left: 9.6em;
+
+  &__border {
+    margin-bottom: 1.3em;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__bottom {
+    margin-top: 2em;
+    margin-right: em(186);
+    padding-bottom: em(79);
+    padding-left: .4em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__social {
+    margin-right: em(32);
+    & svg {
+      width: 100%;
+      height: auto;
+      min-width: em(24);
+      max-width: em(24);
+      
+      & path {
+        transition: fill .2s ease-in-out;
+      }
+    }
+    
+    &:hover {
+      & path {
+        fill: var(--blue);
+      }
+    }
+  }
+  
+  &__mails {
+    display: flex;
+  }
+  
+  &__mail {
+    margin-left: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    & span {
+      font-weight: 400;
+      font-size: em(18);
+      line-height: em(30, 18);
+      margin-left: em(32, 18);
+    }
+    
+    & svg {
+      width: 100%;
+      height: auto;
+      min-width: em(24);
+      max-width: em(24);
+
+      & path {
+        transition: fill .2s ease-in-out;
+      }
+      & path {
+        transition: fill .2s ease-in-out;
+      }
+    }
+    
+    &:hover {
+      & path {
+        fill: var(--blue);
+      }
+    }
+  }
+}

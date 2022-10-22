@@ -1,0 +1,100 @@
+.form {
+  margin-top: em(61);
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: em(60);
+  }
+
+  &__field {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+
+    & input, & select {
+      padding: em(10, 16) em(14, 16);
+      border: em(1, 16) solid #959595;
+      font-weight: 400;
+      font-size: em(16, 16);
+      line-height: em(30, 16);
+      min-height: 3.458em;
+      
+      &::placeholder {
+        color: #959595;
+      }
+    }
+    
+    & label {
+      font-size: em(20);
+      line-height: em(30, 20);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 100%;
+
+      & span {
+        margin-bottom: em(16);
+      }
+
+      &.error {
+        input, select {
+          border-color: red;
+        }
+
+        & b {
+          color: red;
+        }
+      }
+    }
+
+    &--time {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      & label {
+        width: 48%;
+        position: relative;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          right: em(15);
+          top: 3.6em;
+          width: em(22);
+          height: em(22);
+          background: #fff url('../img/arrow.svg') no-repeat;
+          background-size: cover;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+
+  &__select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    cursor: pointer;
+  }
+
+  &__bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__price {
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 400;
+    color: #2B17F7;
+
+    & span {
+      font-size: em(60);
+      line-height: em(61, 60);
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.button {
+  padding: em(9) em(54);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background .2s ease-in-out, color .2s ease-in-out;
+  font-weight: 600;
+  border: em(1) solid var(--blue);
+  font-size: 1em;
+
+  & span {
+    font-size: em(18);
+  }
+  
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: em(10);
+    & svg {
+      min-width: em(35);
+      max-width: em(35);
+      width: 100%;
+      height: auto;
+      & path {
+        transition: fill .2s ease-in-out;
+      }
+    }
+  }
+  
+  &--blue {
+    color: var(--white);
+    background: var(--blue);
+    border: em(1) solid var(--blue);
+    
+    &:hover {
+      background: var(--white);
+      color: var(--blue);
+
+      & svg path {
+        fill: var(--blue);
+      }
+    }
+  }
+  
+  &--transparent {
+    color: var(--black);
+    background: transparent;
+
+    &:hover {
+      background: var(--blue);
+      color: var(--white);
+
+      & svg path {
+        fill: var(--white);
+      }
+    }
+  }
+}

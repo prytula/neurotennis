@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+
+	&:focus {
+		outline: none;
+	}
+}
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+button {
+  border: 0;
+  color: #fff;
+  font-family: inherit;
+}
+
+:root {
+  --gray: #F4F4F4;
+  --blue: #2B17F7;
+  --white: #ffffff;
+  --black: #000000;
+  --green: #CBF910;
+}
+
+html {
+  font-size: 0.83vw;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  font-size: em(16);
+}
+
+.body-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  background: var(--gray);
+  // overflow: hidden;
+}

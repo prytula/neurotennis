@@ -1,0 +1,108 @@
+.popup.popup_form.popup-disabled
+  .popup__wrapper 
+    .popup__title 
+      span Booking form
+    .popup__close 
+      svg(width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg')
+        path(d='M16 13.5559L24.5559 5L27 7.44406L18.4441 16L27 24.5559L24.5559 27L16 18.4441L7.44406 27L5 24.5559L13.5559 16L5 7.44406L7.44406 5L16 13.5559Z' fill='#2B17F7')  
+    
+    form(action='' method="post").form.popup__form
+      .form__row
+        .form__field
+          label 
+            span Full name 
+              b *
+            input(type="text" placeholder="First Name" name="firstName").form__input 
+        .form__field
+          label 
+            input(type="text" placeholder="Last Name" name="lastName").form__input 
+
+      .form__row
+        .form__field
+          label 
+            span Email 
+              b *
+            input(type="email" placeholder="Email" name="email").form__input 
+        .form__field
+          label 
+            span Phone Number 
+              b *
+            input(type="phone" placeholder="Phone Number" name="phone").form__input 
+
+      .form__row
+        .form__field
+          label 
+            //- span Period from 
+            span Period 
+              b *
+            input(type="date" name="date").form__input 
+        .form__field.form__field--time
+          label 
+            span From 
+              b *
+            select.form__select(name="timeFrom" value='')
+              option(disabled value="" selected) -
+              option(value="0") 0:00
+              option(value="1") 1:00
+              option(value="2") 2:00
+              option(value="3") 3:00
+              option(value="4") 4:00
+              option(value="5") 5:00
+              option(value="6") 6:00
+              option(value="7") 7:00
+              option(value="8") 8:00
+              option(value="9") 9:00
+              option(value="10") 10:00
+              option(value="11") 11:00
+              option(value="12") 12:00
+              option(value="13") 13:00
+              option(value="14") 14:00
+              option(value="15") 15:00
+              option(value="16") 16:00
+              option(value="17") 17:00
+              option(value="18") 18:00
+              option(value="19") 19:00
+              option(value="20") 20:00
+              option(value="21") 21:00
+              option(value="22") 22:00
+              option(value="23") 23:00
+              option(value="24") 24:00
+          label 
+            span To 
+              b *
+            select.form__select(name="timeTo")
+              option(disabled value="" selected) -
+              option(value="0") 0:00
+              option(value="1") 1:00
+              option(value="2") 2:00
+              option(value="3") 3:00
+              option(value="4") 4:00
+              option(value="5") 5:00
+              option(value="6") 6:00
+              option(value="7") 7:00
+              option(value="8") 8:00
+              option(value="9") 9:00
+              option(value="10") 10:00
+              option(value="11") 11:00
+              option(value="12") 12:00
+              option(value="13") 13:00
+              option(value="14") 14:00
+              option(value="15") 15:00
+              option(value="16") 16:00
+              option(value="17") 17:00
+              option(value="18") 18:00
+              option(value="19") 19:00
+              option(value="20") 20:00
+              option(value="21") 21:00
+              option(value="22") 22:00
+              option(value="23") 23:00
+              option(value="24") 24:00
+      input(type="hidden" name="price" data-price='20').form__priceInput
+      .form__bottom
+        .form__price 
+          span 000.00 $
+        .form__button.button.button--blue 
+          span Buy
+          .button__icon
+            svg(width='37' height='15' viewBox='0 0 37 15' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M36.2071 8.20711C36.5976 7.81658 36.5976 7.18342 36.2071 6.79289L29.8431 0.428932C29.4526 0.0384078 28.8195 0.0384078 28.4289 0.428932C28.0384 0.819457 28.0384 1.45262 28.4289 1.84315L34.0858 7.5L28.4289 13.1569C28.0384 13.5474 28.0384 14.1805 28.4289 14.5711C28.8195 14.9616 29.4526 14.9616 29.8431 14.5711L36.2071 8.20711ZM0.5 8.5H35.5V6.5H0.5V8.5Z' fill='white')

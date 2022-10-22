@@ -1,0 +1,77 @@
+.acquaintance {
+  margin-top: 4.2em;
+  padding-left: 9.8em;
+
+  &__title {
+    padding-left: 2em;
+    & span {
+      display: block;
+    }
+  }
+
+  &__center {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 6.1em;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    &:nth-child(1) {
+      max-width: 36em;
+    }
+
+    &:nth-child(2) {
+      margin-left: 5.3em;
+      max-width: 48%;
+    }
+
+    &_img img {
+      width: em(80);
+      height: em(80);
+    }
+
+    &_title {
+      font-family: 'Neue Machina';
+      font-style: normal;
+      font-weight: 400;
+      color: var(--blue);
+      margin-top: em(40);
+      margin-bottom: 1.275em;
+
+      & span {
+        font-size: em(40);
+        line-height: em(41, 40);
+      }
+    }
+    
+    &_desc {
+      & span {
+        font-size: em(20);
+        line-height: em(30, 20);
+      }
+    }
+  }
+
+  &__button {
+    margin-left: 5.1em;
+    margin-top: 18.1em;
+  }
+
+  &__man {
+    margin-top: -19.9em;
+    margin-left: 1.5em;
+    
+    & img {
+      width: em(883);
+      height: em(872);
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    margin-top: -8.7em;
+  }
+}

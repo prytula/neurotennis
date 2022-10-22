@@ -1,0 +1,158 @@
+.about {
+  display: flex;
+  width: 100%;
+  margin-top: -7.5em;
+  margin-bottom: 4.5em;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: em(-560);
+    right: 0;
+    background: url('../img/bg-elem-1.png') no-repeat;
+    background-size: auto 100%;
+    background-position: left top;
+    height: em(2547);
+    pointer-events: none;
+  }
+
+  &__brain {
+    width: 42.3%;
+
+    & img {
+      max-width: unset;
+      width: em(665);
+      height: em(794);
+    }
+  }
+
+  &__content {
+    width: 56.4%;
+    margin-top: 1em;
+  }
+
+  &__title {
+    & span {
+      display: inline-block;
+      line-height: 100%;
+    }
+
+    &--bottom {
+      margin-left: .3em;
+    }
+
+    &_icon {
+      width: 100%;
+      height: auto;
+      min-width: em(120, 120);
+      max-width: em(120, 120);
+      margin-top: 0.25em;
+      margin-left: 0.06em;
+    }
+  }
+
+  &__yellow {
+    background: url('../img/yellow.png') no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 400;
+    color: var(--black);
+    padding: em(40);
+    margin-top: 4.7em;
+    margin-bottom: 4.8em;
+
+    & span {
+      font-size: em(40);
+      line-height: em(41, 40);
+    }
+  }
+
+  &__bottom {
+    display: flex;
+  }
+
+  &__list {
+    margin-right: em(97);
+
+    &_wrapper {
+      margin-top: 1.3em;
+      padding-left: 1.8em;
+    }
+
+    &_number {
+      color: var(--blue);
+      vertical-align: top;
+      margin-right: em(25);
+
+      & span {
+        font-size: em(29);
+        line-height: em(30, 29);
+      }
+    }
+
+    &_number, &_title {
+      font-family: 'Neue Machina';
+      font-style: normal;
+      font-weight: 400;
+      display: inline-block;
+    }
+
+    &_title {
+      & span {
+        font-size: em(40);
+        line-height: em(41, 40);
+      }
+    }
+
+    & li {
+      font-size: em(20);
+      line-height: em(40, 20);
+      position: relative;
+
+      &::before {
+        content: '•';
+        width: em(5);
+        height: em(5);
+        border-radius: 50%;
+        position: absolute;
+        left: -0.9em;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__more {
+    margin-left: 1.6em;
+    margin-top: .6em;
+
+    &_button {
+      padding: 0.975em 0.875em;
+      margin-bottom: 1.7em;
+
+      & svg {
+        height: em(62);
+        width: auto;
+      }
+    }
+
+    &_title {
+      font-family: 'Neue Machina';
+      font-style: normal;
+      font-weight: 400;
+
+      & span {
+        font-size: em(40);
+        line-height: em(41, 40);  
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.first {
+  margin-top: em(5);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  $paddingLeft: 149;
+
+  &__desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: em(-160);
+    position: relative;
+    z-index: 1;
+
+    &--left {
+      margin-left: 0;
+      justify-content: flex-start;
+      margin-bottom: em(48);
+    }
+
+    &_img {
+      width: em(163);
+      height: em(53);
+      margin-right: em(73);
+    }
+
+    &_body {
+      font-size: em(20);
+      line-height: em(30, 20);
+      color: var(--black);
+    }
+  }
+
+  &__center {
+    width: 100%;
+    padding-left: em(36);
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 1.6em;
+  }
+
+  &__desc--left, &__button {
+    margin-left: em($paddingLeft);
+  }
+
+  &__title {
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 400;
+    color: var(--black);
+    margin-bottom: 3.45em;
+
+    &_wrap {
+      font-size: em(162);
+      line-height: em(166, 162);
+    }
+    
+    &--blue {
+      color: var(--blue);
+      position: relative;
+      display: inline-block;
+      line-height: 73%;
+
+      &::after {
+        content: '';
+        width: em(255, 162);
+        height: em(8, 162);
+        background: var(--blue);
+        display: block;
+        position: absolute;
+        right: em(-265, 162);
+        bottom: 0;
+      }
+    }
+
+    &--black {
+      margin-left: em($paddingLeft, 160);
+    }
+  }
+  
+  &__girl {
+    margin-top: -17.9em;
+    margin-left: -16.1em;
+    pointer-events: none;
+    & img {
+      width: em(1040);
+      height: em(1105);
+      max-width: unset;
+    }
+  }
+
+}

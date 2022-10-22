@@ -1,0 +1,128 @@
+.benefits {
+  margin-top: 9em;
+
+  &__title {
+    padding-left: 12.6em;
+
+    & span {
+      display: block;
+    }
+
+    &_icon {
+      width: 100%;
+      height: auto;
+      min-width: em(627, 120);
+      max-width: em(627, 120);
+      margin-right: 0.32em;
+      transform: translate(-.2em, -.12em);
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__slider {
+    width: 74%;
+    margin-top: 12em;
+    margin-right: -11em;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__slide {
+    &_img img {
+      width: em(80);
+      height: em(80);
+    }
+
+    &_title {
+      font-family: 'Neue Machina';
+      font-style: normal;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-top: 2em;
+      margin-bottom: 1.3em;
+
+      span {
+        font-size: em(40);
+        line-height: em(41, 40);
+      }
+    }
+
+    &_desc {
+      max-width: 23em;
+      span {
+        font-size: em(20);
+        line-height: em(30, 20);
+      }
+    }
+  }
+
+  &__boy {
+    margin-top: 4em;
+    width: em(497);
+    position: relative;
+    z-index: 2;
+
+    & img {
+      width: em(497);
+      height: em(704);
+      max-width: unset;
+      position: relative;
+      z-index: 2;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: -3em;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      width: 18.125em;
+      background: linear-gradient(268.1deg, #F4F4F4 85.07%, rgba(244, 244, 244, 0) 117.22%);
+    }
+  }
+
+  &__pagination {
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #2B17F7;
+    font-size: em(20);
+    line-height: em(20, 20);
+    position: absolute;
+    bottom: 7.6em;
+    left: -10em;
+
+    & .swiper-pagination-current, .swiper-pagination-total {
+      &::before {
+        content: '0'
+      }
+    } 
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 0;
+    left: -17.8em;
+    z-index: 3;
+    padding: 1.5em 1.5em;
+
+    span {
+      font-weight: 400;
+      font-size: em(40);
+      line-height: em(41, 40);
+      margin-right: .3em;
+    }
+
+    & svg {
+      min-width: em(62);
+      max-width: em(62);
+    }
+  }
+}

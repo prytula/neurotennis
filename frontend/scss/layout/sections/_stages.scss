@@ -1,0 +1,171 @@
+.stages {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5.2em;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -15em;
+    right: 0;
+    background: url('../img/bg-elem-2.png') no-repeat;
+    background-size: auto 100%;
+    background-position: right top;
+    width: 100%;
+    height: em(2547);
+    pointer-events: none;
+  }
+
+
+  &__info {
+    width: 45%;
+    background: url('../img/stages/left-bg.png') no-repeat;
+    background-size: cover;
+    background-position: center top;
+    color: #F4F4F4;
+    padding: em(40);
+    position: relative;
+
+    &_title {
+      font-family: 'Neue Machina';
+      font-style: normal;
+      font-weight: 400;
+      margin-bottom: em(24);
+
+      & span {
+        font-size: em(40);
+        line-height: em(50, 40);
+      }
+    }
+
+    &_list {
+      margin-top: 1.8em;
+      margin-left: 2em;
+
+      li {
+        font-size: em(20);
+        line-height: em(24, 20);
+        position: relative;
+        margin-bottom: 1em;
+  
+        &::before {
+          content: '•';
+          width: em(5);
+          height: em(5);
+          border-radius: 50%;
+          position: absolute;
+          left: -0.9em;
+          top: 0;
+          bottom: 0;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    &_arrow {
+      position: absolute;
+      right: -2.9em;
+      top: 0;
+      padding: 0.875em 1em;
+      background: #CBF910;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      & svg {
+        width: 100%;
+        height: auto;
+        min-width: em(62);
+        max-width: em(62);
+      }
+    }
+  }
+
+  &__title {
+    margin-left: 8.4em;
+    width: 40%;
+    margin-top: -1em;
+
+    & span {
+      display: block;
+    }
+
+    &_icon {
+      width: 100%;
+      height: auto;
+      min-width: em(120, 120);
+      max-width: em(120, 120);
+      margin-right: 0.3em;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8.2em;
+    padding: 0 5em;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 29%;
+
+    &_top {
+      display: flex;
+      width: 100%;
+    }
+
+    &_number {
+      color: var(--blue);
+      position: relative;
+      margin-right: 1.6em;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: em(40);
+        height: em(40);
+        border-radius: 50%;
+        background: var(--green);
+      }
+      
+      span {
+        position: relative;
+        z-index: 2;
+        font-size: em(60);
+        line-height: em(61, 60);  
+      }
+    }
+
+    &_number, &_title {
+      font-family: 'Neue Machina';
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    &_title {
+      & span {
+        font-size: em(40);
+        line-height: em(41, 40);
+      }
+    }
+
+    &_desc {
+      width: 100%;
+      margin-top: 1.3em;
+      & span {
+        font-size: em(20);
+        line-height: em(30, 20);
+      }
+    }
+  }
+}

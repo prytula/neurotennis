@@ -1,0 +1,23 @@
+.title {
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  color: var(--black);
+
+  & span {
+    font-size: em(120);
+    line-height: em(123, 120);
+    position: relative;
+
+    &:first-child::after {
+      content: '';
+      position: absolute;
+      left: -0.16em;
+      top: 50%;
+      width: em(8, 120);
+      height: 74%;
+      transform: translateY(-50%);
+      background: #2B17F7;
+    }
+  }
+}
