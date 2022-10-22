@@ -93,7 +93,6 @@ const validatePhone = (email) => {
 function checkFieldErrors({input, value, fieldName}) {
 	const parentLabel = input.closest('label');
 	let haveErrors = false;
-	console.log('value:', value, fieldName);
 
 	if (value === "") {
 		haveErrors = true;
